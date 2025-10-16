@@ -1,2 +1,57 @@
-# AI-Meme-Generator
-AI Meme Generator built with Spring Boot integrates OpenAI for witty captions and Imgflip API for meme creation. Users enter a topic, and the app generates and returns a meme instantly. Fun, fast, and creative blend of AI humor and image generation using Java and REST APIs.
+# 🤖 AI Meme Generator (Spring Boot + Imgflip)
+
+An AI-powered meme generator built with **Spring Boot (Java)** that uses **OpenAI API** for generating witty captions and **Imgflip API** for creating memes. Enter a topic, and get a ready-made meme instantly!
+
+---
+
+## 🚀 Features
+- 🤖 AI-generated funny captions using OpenAI
+- 🖼️ Meme creation through Imgflip API
+- ⚙️ RESTful backend with Spring Boot
+- 🔐 Environment variable-based configuration
+- 🌐 JSON-based API for easy integration
+
+---
+
+## 🧩 Tech Stack
+- **Backend:** Spring Boot (Java)
+- **AI Integration:** OpenAI API
+- **Meme Creation:** Imgflip API
+- **HTTP Client:** RestTemplate / WebClient
+- **Build Tool:** Maven
+
+---
+
+## 📸 Workflow
+1. User inputs a meme idea/topic.
+2. The app calls OpenAI API to generate funny captions.
+3. The chosen caption is sent to Imgflip API.
+4. The final meme image URL is returned in JSON format.
+
+---
+
+## 📦 API Endpoints
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | `/api/generate` | Generate captions using AI |
+| POST | `/api/create` | Create meme using Imgflip |
+| POST | `/api/ai-meme` | Combine AI + Imgflip |
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ai-meme-generator.git
+   cd ai-meme-generator
+2. **Configure your credentials**
+
+In application.properties:
+openai.api.key=YOUR_OPENAI_API_KEY
+imgflip.username=YOUR_IMGFLIP_USERNAME
+imgflip.password=YOUR_IMGFLIP_PASSWORD
+
+
+3. **Run the application**
+mvn spring-boot:run
