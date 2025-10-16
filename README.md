@@ -41,17 +41,24 @@ An AI-powered meme generator built with **Spring Boot (Java)** that uses **OpenA
 
 ## ⚙️ Setup Instructions
 
+⚙️ Setup Instructions
+
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/ai-meme-generator.git
-   cd ai-meme-generator
+
+git clone https://github.com/yourusername/ai-meme-generator.git
+cd ai-meme-generator
+
+
 2. **Configure your credentials**
 
-In application.properties:
+Open the application.properties file and add the following:
+
 openai.api.key=YOUR_OPENAI_API_KEY
 imgflip.username=YOUR_IMGFLIP_USERNAME
 imgflip.password=YOUR_IMGFLIP_PASSWORD
 
 
 3. **Run the application**
-mvn spring-boot:run
+
+   mvn spring-boot:run
+
